@@ -4,6 +4,7 @@ gem 'jquery-rails'
 gem 'markdown-rails'
 gem 'pg'
 gem 'rails', '3.2.5'
+gem 'thin'
 
 
 # Gems used only for assets and not required
@@ -16,8 +17,11 @@ end
 
 group :development, :test do
   gem 'capybara'
-  gem 'cucumber-rails'
   gem 'foreman'
   gem 'rspec-rails'
   gem 'yard'
+end
+
+group :test do
+  gem 'cucumber-rails'
 end
