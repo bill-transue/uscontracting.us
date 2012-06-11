@@ -20,6 +20,7 @@ group :development, :test do
   gem 'capybara'
   gem 'foreman'
   gem 'rspec-rails'
+  gem 'spork'
   gem 'yard'
 end
 
