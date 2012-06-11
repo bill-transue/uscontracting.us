@@ -4,6 +4,7 @@ gem 'jquery-rails'
 gem 'markdown-rails'
 gem 'pg'
 gem 'rails', '3.2.5'
+gem 'redcarpet', '>2'
 gem 'thin'
 
 
