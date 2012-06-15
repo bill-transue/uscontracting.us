@@ -1,6 +1,4 @@
-# UScontracting, Inc.
-
-[Home](/)
+## Welcome
 
 UScontracting is a technology company focused on many areas of software development.
 

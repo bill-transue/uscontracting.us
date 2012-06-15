@@ -9,9 +9,50 @@
 </head>
 <body>
 
-  <div class="container fill">
-    <%= yield %>
+  <div class="wrapper">
+    <header class="container">
+      <div class="row">
+        <div class="span12">
+        <div class="extraneous-non-semantic-markup">
+          <h1>UScontracting, Inc.</h1>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <aside class="span2">
+        <div class="extraneous-non-semantic-markup">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="/">Home</a></li>
+          </ul>
+          <address>
+            <strong>UScontracting</strong><br>
+            246 Nottingham Road<br>
+            Annapolis, MD 21405<!-- <br>
+            <abbr title="Phone">P:</abbr>
+            <span><span id="gc-number-0" class="gc-cs-link" title="Call with Google Voice">() -</span></span>
+            -->
+          </address>
+        </div>
+        </aside>
+        <div id="content" class="span10 filler">
+        <div class="extraneous-non-semantic-markup">
+            <%= yield %>
+        </div>
+        </div>
+      </div>
+      <div class="push"><!--//--></div>
+
+    </div>
   </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2012 UScontracting, Inc.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
