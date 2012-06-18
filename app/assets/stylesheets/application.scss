@@ -54,3 +54,12 @@ footer {
 body { background-image: url('/assets/whitey.png'); }
 
 .container { background-color: #FFF; }
+
+header {
+  h1 { 
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    img { width: 225px; }
+  }
+}
