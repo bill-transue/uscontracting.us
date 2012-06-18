@@ -25,7 +25,7 @@
         <aside class="span2">
         <div class="extraneous-non-semantic-markup">
           <ul class="nav nav-pills nav-stacked">
-            <li><a href="/">Home</a></li>
+            <li <%= " class='active'" if "/"==request.fullpath[0] %>><a href="/">Home</a></li>
           </ul>
           <address>
             <strong>UScontracting</strong><br>
