@@ -21,20 +21,23 @@ html, body {
 }
 
 footer {
-  color: #666;
+  color: #CCC;
   background: #222;
   padding: 17px 0 18px 0;
-  border-top: 1px solid #000;
-  p { 
-    margin-bottom: 0;
+  border-top: 1px solid #999;
+  .container {
     background-color: #222;
-    text-align: center;
-  }
-  a {
-    color: #999;
-  }
-  a:hover {
-    color: #efefef;
+    p { 
+      margin-bottom: 0;
+      /* background-color: #222; */
+      text-align: center;
+    }
+    a {
+      color: #999;
+    }
+    a:hover {
+      color: #efefef;
+    }
   }
 }
 
@@ -51,9 +54,9 @@ footer {
 /* Bootstrap Tweaks */
 .extraneous-non-semantic-markup { padding-left: 5px; }
 
-body { background-image: url('/assets/whitey.png'); }
+body { background-image: url('/assets/black_linen_v2.png'); }
 
-.container { background-color: #FFF; }
+.container { background-color: #EEE; }
 
 header {
   h1 { 
@@ -62,5 +65,12 @@ header {
     padding-left: 25px;
     margin-bottom: .25em;
     img { width: 225px; }
+  }
+}
+
+#content {
+  h2 { 
+    text-decoration: underline;
+    margin-bottom: .25em;
   }
 }

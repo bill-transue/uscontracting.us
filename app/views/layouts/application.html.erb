@@ -25,7 +25,8 @@
         <aside class="span2">
         <div class="extraneous-non-semantic-markup">
           <ul class="nav nav-pills nav-stacked">
-            <li <%= " class='active'" if "/"==request.fullpath[0] %>><a href="/">Home</a></li>
+            <li <%= " class='active'" if "/"==request.fullpath %>><a href="/">Home</a></li>
+            <li <%= " class='active'" if "/employee-links"==request.fullpath %>><a href="/employee-links">Employee Links</a></li>
           </ul>
           <address>
             <strong>UScontracting</strong><br>
