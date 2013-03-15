@@ -145,17 +145,15 @@ div.container {
 
 .logo {
   margin-top: 1px;
-  max-width: 45px;
   float: right;
   padding-left: 13px;
 }
 
 .logo.visible-phone {
-  max-width: 65px;
   float: none;
   display: block; 
   margin-left: auto; 
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .nav-pills:after {
