@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>UScontracting</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-
-  <div class="wrapper">
-    <header class="container">
-      <div class="row">
-        <div class="span12">
-        <div class="extraneous-non-semantic-markup">
-          <h1><%= image_tag "us_contracting_logo.png", :alt => "UScontracting, Inc." %></h1>
-        </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="container">
-      <div class="row">
-        <aside class="span2">
-        <div class="extraneous-non-semantic-markup">
-          <ul class="nav nav-pills nav-stacked">
+  <head>
+    <title>UScontracting</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-top-padding"></div>
+      <div class="navbar navbar-inverse">
+        <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar collapsed" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="nav-collapse collapse header">
+          <h1>
+            UScontracting<span class="hidden-phone">, Inc.</span>
+            <%= image_tag "us_contracting_logo20.png", :class => "logo hidden-phone" %>
+          </h1>
+          <ul class="nav menu nav-pills">
             <li <%= " class='active'" if "/"==request.fullpath %>><a href="/">Home</a></li>
             <li <%= " class='active'" if "/employee-links"==request.fullpath %>><a href="/employee-links">Employee Links</a></li>
+            <li <%= " class='active'" if "/contact-us"==request.fullpath %>><a href="/contact-us">Contact Us</a></li>
           </ul>
-          <address>
-            <strong>UScontracting</strong><br>
-            246 Nottingham Road<br>
-            Annapolis, MD 21405<!-- <br>
-            <abbr title="Phone">P:</abbr>
-            <span><span id="gc-number-0" class="gc-cs-link" title="Call with Google Voice">() -</span></span>
-            -->
-          </address>
-        </div>
-        </aside>
-        <div id="content" class="span10 filler">
-        <div class="extraneous-non-semantic-markup">
-            <%= yield %>
-        </div>
         </div>
       </div>
-      <div class="push"><!--//--></div>
-
+      <div class="header-bottom-padding"></div>
+      <div class="container">
+        <div class="page_title">
+          <%= yield :page_title %>
+        </div>
+        <div class="extraneous-non-semantic-markup">
+            <%= yield :main%>
+            <%= image_tag "us_contracting_logo20.png", :class => "logo visible-phone" %>
+        </div>
+        <div class="push"><!--//--></div>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">
+    <footer>
       <p>&copy; 2012 UScontracting, Inc.</p>
-    </div>
-  </footer>
-
-</body>
+      <p>Photo by: Beck Collette Photography</p>
+    </footer>
+  </body>
 </html>

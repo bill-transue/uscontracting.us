@@ -13,6 +13,11 @@
  */
 
 @import "bootstrap";
+
+.navbar .nav {
+  margin: -46px 10px 0 0;
+}
+
 @import "bootstrap-responsive";
 
 /* STICKY FOOTER */
@@ -23,49 +28,137 @@ html, body {
 footer {
   color: #CCC;
   background: #222;
-  padding: 17px 0 18px 0;
+  padding: 1px 0 4px;
   border-top: 1px solid #999;
-  .container {
-    background-color: #222;
-    p { 
-      margin-bottom: 0;
-      /* background-color: #222; */
-      text-align: center;
-    }
-    a {
-      color: #999;
-    }
-    a:hover {
-      color: #efefef;
-    }
+  z-index: 1;
+  position: relative;
+  opacity: .90;
+  p { 
+    margin-bottom: 0;
+    /* background-color: #222; */
+    text-align: center;
+  }
+  a {
+    color: #999;
+  }
+  a:hover {
+    color: #efefef;
   }
 }
+
+.header-top-padding { 
+  height: 50px;
+} 
+.header-bottom-padding { 
+  height: 185px;
+} 
 
 .wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -54px;
+  position: relative;
+  margin: 0 auto -46px;
+  .page_title { 
+    color: white;
+    float: left;
+    margin-top: -61px;
+    h3 {
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+}
+
+
+div.header {
+  float: left;
+  position: relative;
+}
+
+ul.menu li {
+  display: inline;
+  padding: 5px;
+}
+ul.menu {
+  min-width: 339px;
+  margin-top: -46px;
+}
+
+.header.collapse.in li {
+  padding: 0;
+}
+
+.nav-collapse .nav > li.active > a {
+  color: white
+}
+
+
+.btn-navbar .icon-bar {
+    background-color: #8B8B8B;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 2px;
+    width: 18px;
 }
 
 .push { height: 54px; }
 /* END STICKY FOOTER */
 
-/* Bootstrap Tweaks */
-.extraneous-non-semantic-markup { padding-left: 5px; }
 
-body { background-image: url('/assets/black_linen_v2.png'); }
+/*body { background-image: url('/assets/black_linen_v2.png'); }*/
 
-.container { background-color: #EEE; }
+/*.container { background-color: #EEE; }*/
+body {
+  background: url('/assets/capitol.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-header {
+div.container {
+  background: white;
+  opacity: .79;
+  clear: both;
+  margin-right: 0;
+  padding: 10px;
+  min-height: 340px;
+  border-radius: 4px;
+}
+
+
+.header {
+  background: none repeat scroll 0 0 white;
+  opacity: 0.79;
+  width: 100%;
+  min-height: 49px;
+  border-radius: 4px;
   h1 { 
-    text-align: left;
-    padding-top: 15px;
-    padding-left: 25px;
-    margin-bottom: .25em;
-    img { width: 225px; }
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 1px;
+    margin-right: 10px;
+    text-align: right;
   }
+}
+
+.logo {
+  margin-top: 1px;
+  max-width: 45px;
+  float: right;
+}
+
+.logo.visible-phone {
+  max-width: 65px;
+  float: none;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.nav-pills:after {
+  clear:none;
 }
 
 #content {
@@ -74,3 +167,58 @@ header {
     margin-bottom: .25em;
   }
 }
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+  background-color: #0088CC
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #0088CC;
+  text-shadow: none;
+}
+
+.navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a:hover {
+  background-color: #EEEEEE;
+  color: #0088CC;
+}
+
+.navbar-inverse .btn-navbar {
+  background-color: #0088CC;
+  background-image: none;
+  margin-top: 3px;
+}
+
+.navbar-inverse .btn-navbar:hover {
+  background-color: #0062A6;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+  background-color: #EEEEEE;
+}
+
+.navbar-inverse .nav-collapse .nav > li.active > a:hover {
+  background-color: #0088CC;
+}
+
+
+
+button.btn-navbar {
+  float: right;
+  height: 43px;
+  margin-top: 4px;
+  position: absolute;
+  width: 43px;
+  z-index: 2;
+}
+
+.navbar .btn-navbar {
+  margin-left: 3px;
+}
+
+.navbar .btn-navbar .icon-bar {
+  width: 20px;
+}
+
+.snail_mail, .employee {
+  padding: 20px;
+}
+
