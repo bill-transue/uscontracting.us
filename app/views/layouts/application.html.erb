@@ -19,11 +19,6 @@
         <div class="nav-collapse collapse header">
           <h1>
             UScontracting<span class="hidden-phone">, Inc.</span>
-            <!--[if lte IE8]>
-              <%= image_tag "us_contracting_logo20.gif", :class => "logo hidden-phone" %>
-            <![else]-->
-              <%= image_tag "us_contracting_logo20.png", :class => "logo hidden-phone" %>
-            <!--<![endif]-->   
           </h1>
           <ul class="nav menu nav-pills">
             <li <%= " class='active'" if "/"==request.fullpath %>><a href="/">Home</a></li>
@@ -39,26 +34,20 @@
         </div>
         <div class="extraneous-non-semantic-markup">
             <%= yield :main%>
-            <!--[if lte IE8]>
-              <%= image_tag "us_contracting_logo20.gif", :class => "logo visible-phone" %>
-            <![else]-->
-              <%= image_tag "us_contracting_logo20.png", :class => "logo visible-phone" %>
-            <!--<![endif]-->   
         </div>
         <div class="push"><!--//--></div>
       </div>
     </div>
 
-    <!--[if lte IE8]>
+    <!--[if lte IE 8]>
       <div class="footer">
     <![endif]-->
     <footer>
       <p>&copy; 2012 UScontracting, Inc.</p>
       <p>Photo by: Beck Collette Photography</p>
     </footer>
-    <!--[if lte IE8]>
+    <!--[if lte IE 8]>
       </div>
     <![endif]-->
-
   </body>
 </html>
