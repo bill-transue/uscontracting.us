@@ -8,7 +8,6 @@ gem 'pg'
 gem 'rails', '3.2.5'
 gem 'redcarpet', '>2'
 gem 'thin'
-gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +23,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spork'
   gem 'yard'
+  gem 'sqlite3'
 end
 
 group :test do
