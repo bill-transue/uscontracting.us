@@ -5,9 +5,10 @@ gem 'jquery-rails'
 gem 'markdown-rails'
 gem 'navigasmic'
 gem 'pg'
-gem 'rails', '3.2.5'
+gem 'rails', '3.2.17'
 gem 'redcarpet', '>2'
 gem 'thin'
+gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
